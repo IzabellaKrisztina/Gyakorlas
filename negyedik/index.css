@@ -45,6 +45,10 @@ nav {
   color: #7b6d8d;
 }
 
+.navbar li a:visited {
+  text-decoration: underline;
+}
+
 .intro {
   padding: 20px;
   max-width: 1000px;
@@ -70,12 +74,24 @@ h2 {
   color: #8499b1;
 }
 
-#date {
+.date {
   color: #593f62;
   opacity: 0.6;
 }
 
-#continue-reading {
+.continue-reading {
   text-transform: uppercase;
   color: #593f62;
+}
+
+footer {
+  background-color: #593f62;
+}
+
+footer h3 {
+  color: #f3e9d2;
+}
+
+footer p {
+  color: #f3e9d2;
 }
