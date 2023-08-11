@@ -1,0 +1,208 @@
+/* 
+selector:
+    * everything on the page
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 1rem;
+    color: #404040;
+    text-align: center;
+    margin: 0;
+}
+
+/* 
+---------- Typography ----------
+*/
+
+h1 {
+    color: #fff;
+    font-size: 2.25rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* 
+combinators:
+    + adjacent sibling (right after it)
+    ~ general sibling (all after it)
+    > direct child
+*/
+h1 + p {
+    color: #f18119;
+    font-size: 1.3125rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin : 0;
+}
+
+h2 {
+    font-size: 1.3125rem;
+    margin: 0;
+}
+
+h2 + p {
+    color: #f18119;
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.top-text {
+    color: #f18119;
+    font-size: 0.625rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+    padding-top: 2px;
+    border-top: 5px solid #f18119;
+    border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
+}
+
+.fine-print {
+    font-size: 0.625rem;
+    letter-spacing: 1px;
+}
+
+/* 
+---------- Intro ----------
+*/
+
+.intro {
+    background-color: #404040;
+    background-image: url(images/ribs.jpg);
+    background-blend-mode: multiply;  /* screen, overlay */
+    background-size: cover;
+    background-position: center;
+    padding: 0 .5em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+}
+
+.top-text {
+    order: -1;
+}
+
+/* 
+---------- Main-content ----------
+*/
+
+.main-content {
+    padding: 2em 1em;
+}
+
+/* 
+---------- Intro + Main-content ----------
+*/
+
+/* 
+combinators:
+    + adjacent sibling (right after it)
+    ~ general sibling (all after it)
+    > direct child
+*/
+.intro > *,
+.main-content > * {
+    max-width: 400px;  
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input,
+.btn {
+    width: 100%;
+    border-radius: 5px;
+}
+
+input {
+    font-family: inherit;
+    text-align: inherit;
+    margin-bottom: .75em;
+    padding: .25em;
+    border: 1px solid #404040;
+    transform: scale(1);
+    transition: transform 250ms;
+}
+
+input:focus {
+    transform: scale(1.1);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1em 1.5em;
+    font-size: 0.625rem; 
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: linear-gradient(to left, #ff713b, #ffa51d);
+    color:#fff;
+    transform: scale(1);
+    transition: color 250ms;
+    transition: transform 250ms;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    color: black;
+    transform: scale(1.1);
+}
+
+/* 
+---------- Form ----------
+*/
+
+.email-collector {
+    width: 80%;
+    max-width: 300px;
+}
+
+/* 
+---------- Media queries ----------
+*/
+
+@media (min-width: 500px){
+    body {
+        font-size: 1.125rem;
+        display: flex;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h1 + p,
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h2 + p {
+        font-size: 1.125rem;
+    }
+
+    .intro,
+    .main-content {
+        width: 50%;
+        min-height: 100vh;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; //when flex-direction: row; */
+        justify-content: center;
+    }
+}
