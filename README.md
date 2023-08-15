@@ -5,4 +5,5 @@
 [negyedik projekt](https://izabellakrisztina.github.io/blog/negyedik/)  
 [otodik projekt](https://izabellakrisztina.github.io/blog/otodik/)  
 [hatodik projekt](https://izabellakrisztina.github.io/blog/hatodik/)  
-[hetedik projekt](https://izabellakrisztina.github.io/blog/hetedik/)
+[hetedik projekt](https://izabellakrisztina.github.io/blog/hetedik/)  
+[nyolcadik projekt](https://izabellakrisztina.github.io/blog/nyolcadik/)
